@@ -17,6 +17,7 @@ This Incident Turnout System had a number of features in it's complete stack:
 - The previous few RFA/messages
 - Beuro of Meterology radar and doppler wind (alternating screen) realtime monitoring, and 
 - Google map road/cross-street view and Google Map street view when available
+- Google map pins for HQ (unit location), RFA location
 
 2. Optional customisable audible alert for inbound RFA with;
 - Text to speech: read out full alert / Or
@@ -27,6 +28,8 @@ This Incident Turnout System had a number of features in it's complete stack:
 - Customised job sheet suited for SES
 - Easily customiseable template (which included plain text (default) and HTML)
 - Pre-filled job sheet with each job detail discernable from the original page message (ie, names, phone, street address, job type etc)
+
+![Imgur Image](./concept-V1.1-working-model.jpg)
 
 In simple terms, as the pager recieves a message that reported a storm or rescue event applicable to your unit, the pager message would be filtered and displayed on the ITS screen, at the same time if enabled, an audible speaking voice would alert you to the new RFA and the printer would automatically print out a job sheet that can be handed to a crew. This all happened in real time within 1-2 second delay for the printjob depending on the equipment speeds invovled.
 
