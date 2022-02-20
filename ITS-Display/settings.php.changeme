@@ -1,0 +1,67 @@
+<?php
+
+/* Information Turnout system (C) 2014
+These are the user configurable paramaters, Edit the variables below for your configurations
+*************************************************************
+*/
+
+// TURNOUT SCREEN TITLE
+// Change the title of your turnout screen, eg write in your unit name.
+$title = "- Turnout Information -";
+// **********************************************************
+
+// TURNOUT SCREEN LOGO - Custom logo full path and SIZE - stick to 45x45px or it will get cropped.
+$logo = ""; // Need to change CSS file first
+// **********************************************************
+
+// LHQ Photos
+// A photo of your LHQ, if you specify a photo and select 1 (enabled), when there are no pager messages your photo will be displayed in
+// the google maps position instead of the map of your LHQ.
+// Store your photo on the server (best) and change the part inside the " ". Otherwise ensure you use the full URL path/name and that it is typed correctly as its case sensitive. - DONT USE http:// or https:// (its in the html)
+// Enable photos $SHOWPHOTOS = 1; | To disable photos $SHOWPHOTOS = 0;
+// NOTE: Good idea to specify and use photos to reduce the likelihood of being blocked by google API service.
+$SHOWPHOTOS = 1;
+$LHQPHOTO = $_SERVER['SERVER_NAME']."/LHQ.jpg";
+$LHQPHOTO2 = $_SERVER['SERVER_NAME']."/SESSHOW.jpg";
+$LHQPHOTO3 = $_SERVER['SERVER_NAME']."/LHQTRUCK.jpg";
+
+// Your LHQ coordinates / Address. You must use google maps and search your address, then take either the GPS coordinates or the street address,
+// EG https://www.google.com.au/maps/place/42+Mills+Rd,+Dandenong+VIC+3175/@-37.990363,145.193897 would be "42+Mills+Rd,+Dandenong+VIC+3175" or "-37.990363,145.193897" note: you should use double quotes for this.
+// **********************************************************
+$LHQADDRESS = "-37.990363,145.193897";
+//$LHQADDRESS = "42+Mills+Rd,+Dandenong+VIC+3175"
+// **********************************************************
+
+// Google API Key
+// By default the script will generate up to 2160 static map requests per day which is over the free limit, if the Turnout Screen is displayed more than once the limit will be exceeded.
+// Register and use an API key below at https://code.google.com/apis/console/?noredirect 
+// usage: set $usegoogleapi = 1 to enable 0 to disable
+$usegoogleapi = 1;
+$googleapi = "&key="."AIzaSy<APIKEY>mApiA<APIKEY>";
+// **********************************************************
+IF ($usegoogleapi == 0) {$googleapi = ""; }
+// **********************************************************
+
+// SQL SERVER
+// **********************************************************
+// SQL server as hostname or IP address. Open your firewall!
+// SQL port and SQL Database name (sqldb)
+$sqlserver = "127.0.0.1";
+$sqlport = "3307";
+$sqldb = "ITS";
+// SQL Username and Password. Must have read/write access!!!
+$sqluser = "root";
+$sqlpass = "Password";
+// **********************************************************
+
+
+
+
+
+// **********************************************************
+
+
+// **********************************************************
+
+
+?>
